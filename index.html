@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Meet the Giggle Garden gang and enjoy silly, colorful poems for curious kids."
+    />
+    <meta name="theme-color" content="#fff9e9" />
+    <title>Giggle Garden | Silly Poems for Kids</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home" aria-label="Giggle Garden home">
+          <span class="brand-mark" aria-hidden="true">🌼</span>
+          <span>giggle garden</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#poems">Poem parade</a>
+          <a href="#friends">Meet the pals</a>
+          <a href="#about">Our little garden</a>
+        </nav>
+
+        <button class="button button-small button-purple" type="button" data-surprise>
+          Pick a poem <span aria-hidden="true">✨</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span aria-hidden="true">🌈</span> A happy place for little imaginations</p>
+            <h1>Big giggles.<br /><span>Little poems.</span></h1>
+            <p class="hero-lead">
+              Come hang out with a dancing duck, a snack-loving dragon, and their
+              very silly friends. There’s always a rhyme around the corner!
+            </p>
+            <div class="hero-actions">
+              <a class="button button-orange" href="#poems">Read a poem <span aria-hidden="true">↓</span></a>
+              <button class="button button-outline" type="button" data-surprise>
+                Surprise me! <span aria-hidden="true">🎲</span>
+              </button>
+            </div>
+            <div class="hero-note">
+              <span class="note-stars" aria-hidden="true">✦ ✦ ✦</span>
+              <span>Made for curious kids and their grown-ups</span>
+            </div>
+          </div>
+
+          <div class="hero-art" role="img" aria-label="A cheerful duck and a little dragon playing in a sunny garden">
+            <div class="sun">☀️</div>
+            <span class="cloud cloud-one" aria-hidden="true"></span>
+            <span class="cloud cloud-two" aria-hidden="true"></span>
+            <span class="sparkle sparkle-one" aria-hidden="true">✦</span>
+            <span class="sparkle sparkle-two" aria-hidden="true">✧</span>
+            <div class="hero-character duck-character" aria-hidden="true">
+              <span class="character-emoji">🦆</span>
+              <span class="speech-bubble">Quack-tastic!</span>
+            </div>
+            <div class="hero-character dragon-character" aria-hidden="true">
+              <span class="character-emoji">🐉</span>
+            </div>
+            <div class="hero-ground" aria-hidden="true"></div>
+            <div class="hero-caption"><span aria-hidden="true">🌷</span> Welcome to the giggle garden!</div>
+          </div>
+        </div>
+        <div class="hero-swoop" aria-hidden="true"></div>
+      </section>
+
+      <section class="poems section" id="poems">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span aria-hidden="true">📖</span> Fresh from the rhyme vine</p>
+              <h2>Poem parade</h2>
+            </div>
+            <p class="section-intro">Pick a favorite, read it out loud, and add your silliest voice.</p>
+          </div>
+
+          <div class="poem-grid" id="poemGrid">
+            <article class="poem-card poem-peach" data-poem>
+              <div class="poem-topline"><span class="poem-emoji" aria-hidden="true">🦆</span><span class="poem-tag">A quacky classic</span></div>
+              <h3>Duck in a Tux</h3>
+              <p>
+                A duck wore socks and a shiny tux,<br />
+                Then rode to town in a carrot truck.<br />
+                “I’m off to dance!” he yelled with glee—<br />
+                And moonwalked straight into a pea!
+              </p>
+              <span class="poem-doodle" aria-hidden="true">✳</span>
+            </article>
+
+            <article class="poem-card poem-blue" data-poem>
+              <div class="poem-topline"><span class="poem-emoji" aria-hidden="true">🐉</span><span class="poem-tag">A snack-time saga</span></div>
+              <h3>Dragon’s Toast</h3>
+              <p>
+                A dragon made toast with a sneeze and a puff,<br />
+                It flew past the moon—now that’s high enough!<br />
+                He buttered the stars and munched with a grin,<br />
+                Then brushed every tooth with a cinnamon spin.
+              </p>
+              <span class="poem-doodle" aria-hidden="true">☁</span>
+            </article>
+
+            <article class="poem-card poem-lilac" data-poem>
+              <div class="poem-topline"><span class="poem-emoji" aria-hidden="true">🐸</span><span class="poem-tag">A pond-side bop</span></div>
+              <h3>Frog’s New Shoes</h3>
+              <p>
+                A frog got boots that went squeak, squeak, squeak,<br />
+                He tap-danced softly for a whole frog week.<br />
+                The fish clapped fins, the turtles cheered,<br />
+                Then everyone’s toes disappeared!
+              </p>
+              <span class="poem-doodle" aria-hidden="true">♫</span>
+            </article>
+          </div>
+          <p class="surprise-message" id="surpriseMessage" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="friends section" id="friends">
+        <div class="container">
+          <div class="section-heading friends-heading">
+            <div>
+              <p class="eyebrow"><span aria-hidden="true">👋</span> Your new besties</p>
+              <h2>Meet the silly squad</h2>
+            </div>
+            <span class="heading-sticker" aria-hidden="true">BFFs!</span>
+          </div>
+
+          <div class="friend-grid">
+            <article class="friend-card friend-yellow">
+              <div class="friend-avatar" aria-hidden="true">🦆</div>
+              <h3>Dizzy Duck</h3>
+              <p>Professional puddle dancer. Part-time sock collector.</p>
+              <span class="friend-trait">Loves: tap shoes</span>
+            </article>
+            <article class="friend-card friend-green">
+              <div class="friend-avatar" aria-hidden="true">🐉</div>
+              <h3>Toasty Dragon</h3>
+              <p>Can toast a marshmallow from a mile away. Mostly tries.</p>
+              <span class="friend-trait">Loves: crunchy snacks</span>
+            </article>
+            <article class="friend-card friend-pink">
+              <div class="friend-avatar" aria-hidden="true">🐸</div>
+              <h3>Hopscotch</h3>
+              <p>Frog, fashion icon, and undefeated hopscotch champ.</p>
+              <span class="friend-trait">Loves: shiny boots</span>
+            </article>
+            <article class="friend-card friend-blue">
+              <div class="friend-avatar" aria-hidden="true">🐻</div>
+              <h3>Professor Bear</h3>
+              <p>Knows a lot about honey. Still can’t spell “beehive.”</p>
+              <span class="friend-trait">Loves: story time</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="garden-cta" id="about">
+        <div class="container cta-inner">
+          <div class="cta-characters" aria-hidden="true">🐸 🦆 🐉</div>
+          <div>
+            <p class="eyebrow">That’s all for now!</p>
+            <h2>Keep your giggles growing.</h2>
+            <p>There’s always room for one more rhyme in the garden.</p>
+          </div>
+          <a class="button button-white" href="#home">Back to the top <span aria-hidden="true">↑</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <a class="footer-brand" href="#home"><span aria-hidden="true">🌼</span> giggle garden</a>
+        <p>Made with a little sunshine and a lot of silliness. <span aria-hidden="true">💛</span></p>
+        <span class="copyright">© <span id="year"></span> Giggle Garden</span>
+      </div>
+    </footer>
+  </body>
+</html>
